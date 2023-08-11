@@ -7,13 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    <img src='images/bg.png'>
-    <img src='images/top-left.png'>
-    <img src='images/top-right.png'>
-    <img src='images/bottom.png'>
-    <br>
-    <button id="btn"> click </button>
-    <img id='output' src="">
+    <div class="logo">
+        <img src="25-logo.png" alt="logo">
+    </div>
+    <div class="output-area">
+        <img id="output" src="">
+    </div>
+    <div class="input-area">
+        <div>
+            <input type="text" id="name" placeholder="請輸入名字縮寫 e.g. CDM">
+            <select id="group">
+                <option>請選擇你的社別</option>
+                <option>勤</option>
+                <option>孝</option>
+                <option>友</option>
+                <option>誠</option>
+                <option>學校</option>
+            </select>
+            <input type="number" id="year" placeholder="請輸入年份 YYYY" min="2000" max="2200">
+            <button id="btn">生成</button>
+        </div>
+    </div>
     <script src="script.js"></script>
     <script src="https://unpkg.com/merge-images"></script>
 </body>
